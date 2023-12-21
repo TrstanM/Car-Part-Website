@@ -3,8 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Epic Car Website</title>
+    <title>Car Part Picker</title>
     <link rel="stylesheet" href="style.css" />
+    <script>
+        function performSearch() {
+            // Get the value from the search input
+            var searchTerm = document.getElementById("searchInput").value.toLowerCase();
+
+            // Perform your search logic here
+            // For demonstration, we'll just show an alert with the search term
+            alert("Performing search for: " + searchTerm);
+        }
+    </script>
 </head>
 <body>
     <h1> Car Part Finder</h1>
@@ -27,6 +37,11 @@
                 <input type="text" class="textbox" placeholder="Enter the Part">
             </li>
         </ul>
+    </div>
+    <h2> Search Tool </h2>
+    <div id="search-container">
+        <input type="text" id="searchInput" placeholder="Enter your search term">
+        <button onclick="performSearch()">Search</button>
     </div>
 
 </body>
